@@ -24,7 +24,7 @@ let channel = program.channel.toLowerCase(),
     basePath = path.resolve(process.env.HOME, 'Library', 'Application Support'),
     sourceDir = path.resolve(basePath, `${appName}`),
     sourceDirContents = path.resolve(sourceDir, '*'),
-    destDir = path.resolve(basePath, `${appName}.${stashId}`) + path.sep;
+    destDir = path.resolve(basePath, `${appName}_stash_${stashId}`) + path.sep;
 
 
 verbose && console.log(`Stashing ${appName} with id:`, stashId, '\n');
