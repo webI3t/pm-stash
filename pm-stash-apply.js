@@ -29,6 +29,8 @@ let channel = program.channel.toLowerCase(),
     destDir = path.resolve(basePath, appName) + path.sep,
     stashedDirExists;
 
+verbose && (shell.config.verbose = true);
+
 verbose && console.log(`Applying the stash ${stashedDir}`, '\n');
 
 verbose && console.log('checking whether stash exists');
