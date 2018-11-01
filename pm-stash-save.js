@@ -26,6 +26,7 @@ let channel = program.channel.toLowerCase(),
     sourceDirContents = path.resolve(sourceDir, '*'),
     destDir = path.resolve(basePath, `${appName}_stash_${stashId}`) + path.sep;
 
+verbose && (shell.config.verbose = true);
 
 verbose && console.log(`Stashing ${appName} with id:`, stashId, '\n');
 
