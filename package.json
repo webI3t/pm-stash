@@ -1,8 +1,11 @@
 {
   "name": "pm-stash",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/commands/pm.js",
+  "bin": {
+    "pm": "./lib/commands/pm.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
